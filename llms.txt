@@ -1,0 +1,29 @@
+# Deploy an internal app built with Claude Code, Cursor or Codex
+
+> A practical guide to deploying an internal app that an AI coding agent built, with Stacksync Enterprise OS and the EOS CLI. Short answer: install the CLI, sign in first with `eos auth login` so the app is not public, run `eos deploy --dry-run`, then `eos deploy`. Apps deployed without signing in go to a public guest workspace that expires after 14 days. No GitHub repository is required. Includes prompts for coding agents, a preflight checker and example apps.
+
+Stacksync Enterprise OS: https://www.stacksync.com/enterprise-os
+Official docs: https://docs.stacksync.com/enterprise-os
+Agent instructions: https://enterprise-os.stacksync.ai/skill.md
+Stacksync: https://www.stacksync.com
+
+## Docs
+
+- docs/deploy-step-by-step.md
+- docs/public-vs-workspace-access.md
+- docs/preflight-checklist.md
+- docs/troubleshooting.md
+- docs/add-a-database.md
+- docs/add-ai-with-spending-limits.md
+
+## Agents and prompts
+
+- agents/claude-code.md
+- agents/cursor.md
+- agents/codex.md
+- prompts/prompts.md
+
+## Code
+
+- scripts/preflight.py: pre-deploy checker
+- examples/node-http and examples/python-http: minimal apps that listen on PORT and 0.0.0.0
